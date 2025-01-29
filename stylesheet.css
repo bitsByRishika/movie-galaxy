@@ -1,0 +1,156 @@
+header{
+    height: 45vh;
+    width: 100%;
+    overflow:scroll;
+    position:relative;
+}
+body{
+    background-color: black;
+}
+body main{
+    background-color: bisque;
+}
+body footer{
+    background-color: blanchedalmond;
+    opacity: .8;
+}
+#head{
+    
+    display:grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+}
+header h1{
+    text-align: center;
+    position:relative;
+    /* bottom: 3px; */
+    font-size:500%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 0px black,-2px -2px 0px black,2px -2px 0px black,-2px 2px 0px black;
+
+}
+nav ul{
+    color: black;
+    list-style-type: none;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+nav li{
+    background-color: bisque;
+    border: 3px black solid;
+    border-radius: 2px;
+    margin: 2px;
+    text-align:center;
+}
+header img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit:fill;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow:visible;
+    margin:10px;
+}
+#grid img{
+    flex: 1 1 calc(50% - 20px);
+    max-width: 50%;
+    min-width: 250px;
+    border: 10px black solid;
+    padding: 10px;
+    background-color: white;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+#grid img:hover{
+    background-color: lightslategray;
+}
+main a{
+    border: 2px solid black;
+}
+main a:hover{
+    background-color: rgb(255, 245, 231);
+    /* color: rgb(255, 255, 255); */
+}
+a:active{
+    color: rgb(0, 234, 0);
+    background-color:rgb(196, 166, 129);
+}
+main a:focus{
+    color: red;
+    border: white solid 3px;
+}
+main a:visited{
+    color: forestgreen;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.current:hover{
+    background-color: rgb(255, 245, 231);
+    color: black;
+}
+nav li {
+    background-color: bisque;
+    border: 3px black solid;
+    border-radius: 2px;
+    margin: 2px;
+    text-align: center;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px; /* Add padding to make it easier to hover */
+}
+
+nav a:hover {
+    background-color: rgb(255, 245, 231);
+    color: black;
+}
+
+nav a.current {
+    background-color: black;
+    color: white;
+}
+
+nav a.current:hover {
+    background-color: rgb(255, 245, 231);
+    color: black;
+}
+p{
+    font-size: x-large;
+}
+figcaption{
+    font-size: x-large;
+}
+#skipLink {
+    position: absolute;
+    top: -9999px;  
+    left: -9999px; 
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    text-decoration: none;
+    z-index: 1000;
+}
+#skipLink:focus {
+    top: 20px; 
+    left: 20px; 
+}
+
